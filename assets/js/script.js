@@ -7,7 +7,7 @@ var search = () => {
 }
 //gets city data from API
 var fetchCityData = function(city) {
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + API_KEY;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + API_KEY;
     fetch(queryURL).then(function(response) {
         // request was successful
         if (response.ok) {
@@ -23,7 +23,7 @@ var fetchCityData = function(city) {
 }
 //get 5 day forecast from API
 var fetchFiveDayForecast = function(lon, lat){
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid="+ API_KEY; 
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid="+ API_KEY; 
     console.log(queryURL);
     fetch(queryURL).then(function(response) {
         // request was successful
