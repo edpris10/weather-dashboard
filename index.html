@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Weather Dashboard</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+    </head>
+    <body>
+        <header class="hero">
+            <h1 class="dashboard-title">Weather Dashboard</h1>
+        </header>
+
+        <section class="city-search">
+            <div class="city row" >
+                <div class="col col-a1">
+                    <h2>Search for a City:</h2>
+                        <label for="search-box"></label>
+                        <input type="text" id="search-box" name="box"><br><br>
+                        <button type="submit" value="Submit" onclick='search()'> Submit </button>
+                </div>
+                <div class="col weather-block col-a2" id="display-forecast"> 
+                </div>
+            </div>        
+        </section>
+    </body>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</html>
